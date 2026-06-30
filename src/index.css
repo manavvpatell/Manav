@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #131318;
+  --color-surface-dim: #131318;
+  --color-surface-bright: #39383e;
+  --color-surface-lowest: #0e0e13;
+  --color-surface-low: #1b1b20;
+  --color-surface-container: #1f1f25;
+  --color-surface-high: #2a292f;
+  --color-surface-highest: #35343a;
+  --color-on-surface: #e4e1e9;
+  --color-on-surface-variant: #c4c5d9;
+  --color-outline: #8e90a2;
+  --color-outline-variant: #434656;
+  --color-primary: #b8c3ff;
+  --color-on-primary: #002388;
+  --color-primary-container: #2e5bff;
+  --color-secondary: #e9c349;
+  --color-on-secondary: #3c2f00;
+  --color-secondary-container: #af8d11;
+  
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #131318;
+    color: #e4e1e9;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #131318;
+    color: #e4e1e9;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for game dev console look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0e0e13;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a292f;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b8c3ff;
+  }
+}
